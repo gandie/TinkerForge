@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+'''
+Maybe use following guide to make this an mqtt client?
+https://www.hivemq.com/blog/mqtt-client-library-paho-python
+'''
+
 from tinkerforge.ip_connection import IPConnection
 from tinkerforge.bricklet_temperature import BrickletTemperature
 import time

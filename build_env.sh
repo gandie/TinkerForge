@@ -12,5 +12,4 @@ pip install tinkerforge
 deactivate
 
 echo "Tinkerforge Environment: Building DONE"
-
 echo "Tinkerforge Environment: Activate environment via '. venv2/bin/activate'"
