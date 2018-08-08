@@ -10,9 +10,10 @@ from tinkerforge.ip_connection import IPConnection
 from tinkerforge.bricklet_temperature import BrickletTemperature
 import time
 
-HOST = "192.168.63.183"
-PORT = 4223
-UID = "e2q"
+#HOST = "192.168.63.183"  # hopefully we can keep this ip for a while...
+HOST = ''
+PORT = 4223  # port can be switched via brickviewer configuration tab
+UID = "e2q"  # uid of the temperature bricklet. see brick viewer for other uids
 
 if __name__ == "__main__":
     ipcon = IPConnection()
@@ -26,6 +27,6 @@ if __name__ == "__main__":
             print("Temperature: " + str(temperature/100.0) + " °C")
             time.sleep(1)
     except KeyboardInterrupt:
-        print('Checking temperature end.')
+        print('\nChecking temperature end.')
 
     ipcon.disconnect()
